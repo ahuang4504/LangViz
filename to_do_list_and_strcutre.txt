@@ -1,0 +1,17 @@
+- Thinking of a GitHub repo user can input their environment chatgpt/claude keys to run this visuzalier in the format of a interactive web page (albert: searching for a good visluazation library to visualize it)
+- to-do list 
+- find a good visualization library to visualize the nodes 
+
+Phase 1: Core Functionality
+[ ] Research Visualization Libraries: Investigate and select the best JavaScript library to render interactive graphs (e.g., D3.js, vis.js, Cytoscape.js). (Users should be able to hover over each node to see their functionatilities and related tools.
+
+[ ] Develop Python Parser: Create the backend logic to scan Python files and directories to identify and extract the LangGraph structure (nodes and edges).
+
+[ ] Initial Visualization: Build a basic prototype that takes a sample extracted graph and renders it in the browser using the chosen library.
+
+Phase 2: Web Interface & User Experience
+[ ] Build Interactive Web Page: Develop the main user interface where the visualization will be displayed.
+
+[ ] Implement File Input: Allow users to specify a Python file or directory to be analyzed.
+
+[ ] API Key Management: Create a secure form for users to input their environment keys for services like OpenAI or Anthropic.
