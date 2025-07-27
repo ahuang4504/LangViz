@@ -3,11 +3,23 @@
 - find a good visualization library to visualize the nodes 
 
 Phase 1: Core Functionality
-[ ] Research Visualization Libraries: Investigate and select the best JavaScript library to render interactive graphs (e.g., D3.js, vis.js, Cytoscape.js). (Users should be able to hover over each node to see their functionatilities and related tools.
+[ ] Research Visualization Libraries: Investigate and select the best JavaScript library to render interactive graphs (e.g., D3.js, vis.js, Cytoscape.js). (Users should be able to hover over each node to see their functionatilities and related tools. Can also check out React Flow and GoJS.
 
-[ ] Develop Python Parser: Create the backend logic to scan Python files and directories to identify and extract the LangGraph structure (nodes and edges).
+[ ] Develop Python Parser: Create the backend logic to scan Python files and directories to identify and extract the LangGraph structure (nodes and edges). (add_node/add_edge/@tools/get_graph())
 
 [ ] Initial Visualization: Build a basic prototype that takes a sample extracted graph and renders it in the browser using the chosen library.
+
+[ ] Prompt to verify graph structure along with extracting summaries of each node.
+
+[ ] Identify tooling at each node
+
+[ ] Display and have interactive tooling displayed on the page that will allow users to test tools with their own inputs
+
+[ ] Interface to provide input and step through graph. Can be done by building the graph and then interrupted at every node. (might need to modify existing code)
+
+[ ] Have panel showing current state object along with all state fields. Highlight changes in yellow, additions in green, and deletions in red.
+
+[ ] Go for a debugging styled interface
 
 Phase 2: Web Interface & User Experience
 [ ] Build Interactive Web Page: Develop the main user interface where the visualization will be displayed.
@@ -15,3 +27,6 @@ Phase 2: Web Interface & User Experience
 [ ] Implement File Input: Allow users to specify a Python file or directory to be analyzed.
 
 [ ] API Key Management: Create a secure form for users to input their environment keys for services like OpenAI or Anthropic.
+
+FUTURE STEPS
+[ ] Instead of code to graph, go from graph to code. This means generating LangGraph setups from drag and drop blockings.
